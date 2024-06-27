@@ -1,8 +1,20 @@
 import Image from "next/image";
-import styles from "./page.module.css";
+import Titulo from "./components/Titulo/Titulo";
+import Subtitulo from "./components/Subtitulo/Subtitulo";
+import styles from "./page.module.css"
 
 export default function Home() {
   return(
-    <h1>HOLA!!!!!</h1>
+    <>
+      <Titulo/>
+      <Subtitulo texto={"Pagina principal"}></Subtitulo>
+      <div className="imagen">
+      <Image
+        src={"/imagenVeterinario.jpg"}
+        width={600}
+        height={400}
+        />
+        </div>
+    </>
   )
 }

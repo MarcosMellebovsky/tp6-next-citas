@@ -1,0 +1,13 @@
+.texto{
+    font-size: x-large;
+
+}
+.dobleP{
+    width: 60%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.459);
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+}

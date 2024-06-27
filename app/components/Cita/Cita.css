@@ -1,0 +1,23 @@
+.tarjeta{
+    width: 100%;
+    padding: 2rem;
+    background: white;
+    border-bottom: 1px solid #e1e1e1;
+    color: black;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.tarjeta button{
+    cursor: pointer;
+width: 100%;
+color: black;
+border-color: black;
+background-color: white;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 10px;
+    list-style: none;
+}
