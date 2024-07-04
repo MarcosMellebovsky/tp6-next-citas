@@ -1,4 +1,5 @@
 import './Cita.css';
+import { useEffect,useState } from 'react';
 
 function Citas({ id, mascota, dueño, fecha, hora, sintomas, citas, setCitas }) {
     const eliminarCita = (e) => {
