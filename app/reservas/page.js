@@ -4,11 +4,10 @@ import styles from './page.module.css';
 
 export default function Reservas() {
 
-    const [citas, setCitas] = useState(JSON.parse(localStorage.getItem("citas")));
+    const [citas, setCitas] = useState(JSON.parse(window.localStorage.getItem("citas")));
 
-    // Save citas to local storage whenever citas changes
     useEffect(() => {
-        localStorage.setItem('citas', JSON.stringify(citas));
+        window.localStorage.setItem('citas', JSON.stringify(citas));
     }, [citas]);
 
     const agregarCita = (nuevaCita) => {
