@@ -4,10 +4,10 @@ import styles from './page.module.css';
 
 export default function Reservas() {
 
-    const [citas, setCitas] = useState(JSON.parse(window.localStorage.getItem("citas")));
+    const [citas, setCitas] = useState(JSON.parse(localStorage.getItem("citas")));
 
     useEffect(() => {
-        window.localStorage.setItem('citas', JSON.stringify(citas));
+        localStorage.setItem('citas', JSON.stringify(citas));
     }, [citas]);
 
     const agregarCita = (nuevaCita) => {
